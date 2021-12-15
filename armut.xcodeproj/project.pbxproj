@@ -13,6 +13,15 @@
 		18E748E32769102B0034F9A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E748E12769102B0034F9A4 /* LaunchScreen.storyboard */; };
 		18E748EF276915580034F9A4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E748EE276915580034F9A4 /* MainViewController.swift */; };
 		18E748F32769157F0034F9A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E748F22769157F0034F9A4 /* Main.storyboard */; };
+		18E748F5276A72850034F9A4 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E748F4276A72850034F9A4 /* MainViewModel.swift */; };
+		18E748F8276A734D0034F9A4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E748F7276A734D0034F9A4 /* NetworkManager.swift */; };
+		18E748FA276A73550034F9A4 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E748F9276A73550034F9A4 /* Response.swift */; };
+		18E748FD276A746B0034F9A4 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E748FC276A746B0034F9A4 /* List.swift */; };
+		18E748FF276A75C70034F9A4 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E748FE276A75C70034F9A4 /* Service.swift */; };
+		18E74905276A79880034F9A4 /* NetworkManager+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E74904276A79880034F9A4 /* NetworkManager+JSON.swift */; };
+		18E74907276A7D950034F9A4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E74906276A7D950034F9A4 /* DetailViewController.swift */; };
+		18E74909276A7EE70034F9A4 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E74908276A7EE70034F9A4 /* DetailViewModel.swift */; };
+		AD69BE56AF41E624906A0C76 /* Pods_armut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5757976683FD53F53B44CD5A /* Pods_armut.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,17 @@
 		18E748E42769102B0034F9A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18E748EE276915580034F9A4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		18E748F22769157F0034F9A4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		18E748F4276A72850034F9A4 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		18E748F7276A734D0034F9A4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		18E748F9276A73550034F9A4 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		18E748FC276A746B0034F9A4 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		18E748FE276A75C70034F9A4 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		18E74904276A79880034F9A4 /* NetworkManager+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+JSON.swift"; sourceTree = "<group>"; };
+		18E74906276A7D950034F9A4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		18E74908276A7EE70034F9A4 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		5757976683FD53F53B44CD5A /* Pods_armut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_armut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FB492D2FD98A727F0D7D631 /* Pods-armut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-armut.release.xcconfig"; path = "Target Support Files/Pods-armut/Pods-armut.release.xcconfig"; sourceTree = "<group>"; };
+		9610D1487CA4CB75E2DB8A36 /* Pods-armut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-armut.debug.xcconfig"; path = "Target Support Files/Pods-armut/Pods-armut.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD69BE56AF41E624906A0C76 /* Pods_armut.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11051E374C52C8828CEA2568 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9610D1487CA4CB75E2DB8A36 /* Pods-armut.debug.xcconfig */,
+				6FB492D2FD98A727F0D7D631 /* Pods-armut.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		18E748CA276910280034F9A4 = {
 			isa = PBXGroup;
 			children = (
 				18E748D5276910280034F9A4 /* armut */,
 				18E748D4276910280034F9A4 /* Products */,
+				11051E374C52C8828CEA2568 /* Pods */,
+				32F035A01E0A6FC512BDF8CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +88,9 @@
 		18E748D5276910280034F9A4 /* armut */ = {
 			isa = PBXGroup;
 			children = (
+				18E74900276A79570034F9A4 /* Extension */,
+				18E748FB276A74610034F9A4 /* Core */,
+				18E748F6276A73350034F9A4 /* Network */,
 				18E748EA276910360034F9A4 /* Model */,
 				18E748ED276910560034F9A4 /* Controller */,
 				18E748EC276910510034F9A4 /* ViewModel */,
@@ -71,6 +106,7 @@
 		18E748EA276910360034F9A4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18E748FE276A75C70034F9A4 /* Service.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -78,8 +114,8 @@
 		18E748EB2769104A0034F9A4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				18E748E12769102B0034F9A4 /* LaunchScreen.storyboard */,
 				18E748F22769157F0034F9A4 /* Main.storyboard */,
+				18E748E12769102B0034F9A4 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,6 +123,8 @@
 		18E748EC276910510034F9A4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				18E748F4276A72850034F9A4 /* MainViewModel.swift */,
+				18E74908276A7EE70034F9A4 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -95,8 +133,50 @@
 			isa = PBXGroup;
 			children = (
 				18E748EE276915580034F9A4 /* MainViewController.swift */,
+				18E74906276A7D950034F9A4 /* DetailViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		18E748F6276A73350034F9A4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				18E748F7276A734D0034F9A4 /* NetworkManager.swift */,
+				18E748F9276A73550034F9A4 /* Response.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		18E748FB276A74610034F9A4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				18E748FC276A746B0034F9A4 /* List.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		18E74900276A79570034F9A4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18E74903276A79790034F9A4 /* NetworkManager */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		18E74903276A79790034F9A4 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				18E74904276A79880034F9A4 /* NetworkManager+JSON.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		32F035A01E0A6FC512BDF8CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5757976683FD53F53B44CD5A /* Pods_armut.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18E748E72769102B0034F9A4 /* Build configuration list for PBXNativeTarget "armut" */;
 			buildPhases = (
+				68DEA1F579DD1A4FBB28AB7D /* [CP] Check Pods Manifest.lock */,
 				18E748CF276910280034F9A4 /* Sources */,
 				18E748D0276910280034F9A4 /* Frameworks */,
 				18E748D1276910280034F9A4 /* Resources */,
+				4152D21ABBE6ACF8A55B0437 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,14 +247,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4152D21ABBE6ACF8A55B0437 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-armut/Pods-armut-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-armut/Pods-armut-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-armut/Pods-armut-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68DEA1F579DD1A4FBB28AB7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-armut-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18E748CF276910280034F9A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18E748EF276915580034F9A4 /* MainViewController.swift in Sources */,
+				18E748FF276A75C70034F9A4 /* Service.swift in Sources */,
 				18E748D7276910280034F9A4 /* AppDelegate.swift in Sources */,
+				18E748FD276A746B0034F9A4 /* List.swift in Sources */,
+				18E748F8276A734D0034F9A4 /* NetworkManager.swift in Sources */,
+				18E74905276A79880034F9A4 /* NetworkManager+JSON.swift in Sources */,
 				18E748D9276910280034F9A4 /* SceneDelegate.swift in Sources */,
+				18E74907276A7D950034F9A4 /* DetailViewController.swift in Sources */,
+				18E748FA276A73550034F9A4 /* Response.swift in Sources */,
+				18E74909276A7EE70034F9A4 /* DetailViewModel.swift in Sources */,
+				18E748F5276A72850034F9A4 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +440,7 @@
 		};
 		18E748E82769102B0034F9A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9610D1487CA4CB75E2DB8A36 /* Pods-armut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -336,6 +469,7 @@
 		};
 		18E748E92769102B0034F9A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FB492D2FD98A727F0D7D631 /* Pods-armut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
