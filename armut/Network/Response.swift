@@ -10,7 +10,6 @@ import SwiftyJSON
 import Alamofire
 import UIKit
 
-
 class Response {
     func parseJSON<T:Codable>(response: AFDataResponse<Any>, model:T.Type, completion: @escaping (AFResult<Codable>) -> Void) {
         switch response.result {

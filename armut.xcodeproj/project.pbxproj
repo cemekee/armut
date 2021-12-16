@@ -21,6 +21,8 @@
 		18E74905276A79880034F9A4 /* NetworkManager+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E74904276A79880034F9A4 /* NetworkManager+JSON.swift */; };
 		18E74907276A7D950034F9A4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E74906276A7D950034F9A4 /* DetailViewController.swift */; };
 		18E74909276A7EE70034F9A4 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E74908276A7EE70034F9A4 /* DetailViewModel.swift */; };
+		18E7490E276BB1DF0034F9A4 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E7490C276BB1DF0034F9A4 /* PopularCollectionViewCell.swift */; };
+		18E7490F276BB1DF0034F9A4 /* PopularCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E7490D276BB1DF0034F9A4 /* PopularCollectionViewCell.xib */; };
 		AD69BE56AF41E624906A0C76 /* Pods_armut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5757976683FD53F53B44CD5A /* Pods_armut.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		18E74904276A79880034F9A4 /* NetworkManager+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+JSON.swift"; sourceTree = "<group>"; };
 		18E74906276A7D950034F9A4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		18E74908276A7EE70034F9A4 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		18E7490C276BB1DF0034F9A4 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
+		18E7490D276BB1DF0034F9A4 /* PopularCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularCollectionViewCell.xib; sourceTree = "<group>"; };
 		5757976683FD53F53B44CD5A /* Pods_armut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_armut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB492D2FD98A727F0D7D631 /* Pods-armut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-armut.release.xcconfig"; path = "Target Support Files/Pods-armut/Pods-armut.release.xcconfig"; sourceTree = "<group>"; };
 		9610D1487CA4CB75E2DB8A36 /* Pods-armut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-armut.debug.xcconfig"; path = "Target Support Files/Pods-armut/Pods-armut.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 			children = (
 				18E748F22769157F0034F9A4 /* Main.storyboard */,
 				18E748E12769102B0034F9A4 /* LaunchScreen.storyboard */,
+				18E7490C276BB1DF0034F9A4 /* PopularCollectionViewCell.swift */,
+				18E7490D276BB1DF0034F9A4 /* PopularCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E7490F276BB1DF0034F9A4 /* PopularCollectionViewCell.xib in Resources */,
 				18E748F32769157F0034F9A4 /* Main.storyboard in Resources */,
 				18E748E32769102B0034F9A4 /* LaunchScreen.storyboard in Resources */,
 				18E748E02769102B0034F9A4 /* Assets.xcassets in Resources */,
@@ -294,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E7490E276BB1DF0034F9A4 /* PopularCollectionViewCell.swift in Sources */,
 				18E748EF276915580034F9A4 /* MainViewController.swift in Sources */,
 				18E748FF276A75C70034F9A4 /* Service.swift in Sources */,
 				18E748D7276910280034F9A4 /* AppDelegate.swift in Sources */,

@@ -10,9 +10,10 @@ import Alamofire
 
 class MainViewModel {
     
-    //var movie = Movie(title: "", year: "", rated: "", released: "", poster: "")
-    var service = Service(id: 1, serviceID: 1, name: "", longName: "", imageURL: "", proCount: 1, averageRating: 1, completedJobsOnLastMonth: 1)
+    var service : Service?
+    var result : Result?
     var goToDetail : ()->() = {}
+    var updateUI : ()->() = {}
     
     func fetchService(service: Int) {
         
@@ -24,7 +25,22 @@ class MainViewModel {
                 print("JSON RESPONSE MODEL : \(String(describing: serviceModel))")
                 self?.service = serviceModel
                 self?.goToDetail()
-                
+            case .failure(_):
+                break
+            }
+        }
+    }
+    
+    func getAllService() {
+        
+        NetworkManager.instance.fetch(HTTPMethod.get, url: "\(List.getAllService)" , requestModel: nil, model: Result.self ) { [weak self] response in
+            switch(response)
+            {
+            case .success(let model):
+                let serviceModel = model as! Result
+                print("JSON RESPONSE MODEL : \(String(describing: serviceModel))")
+                self?.result = serviceModel
+                self?.updateUI()
             case .failure(_):
                 break
             }

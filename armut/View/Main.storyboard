@@ -71,18 +71,27 @@
                                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="btnCleaningTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rCD-7o-iSs"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7u-1P-Zkc">
                                                         <rect key="frame" x="204.5" y="0.0" width="67.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="btnTransportTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DeW-Jp-g4E"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71p-nS-YjQ">
                                                         <rect key="frame" x="307" y="0.0" width="67" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="btnRepairTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="q0m-ar-bAf"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -133,24 +142,36 @@
                                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="btnLessonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Td0-an-JIr"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGL-4c-xrY">
                                                         <rect key="frame" x="102.5" y="0.0" width="67" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="btnHealthTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3Vm-XN-3gQ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOC-ro-4nE">
                                                         <rect key="frame" x="204.5" y="0.0" width="67.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="btnWeddingTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MJI-ds-qxL"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufd-NL-dSg">
                                                         <rect key="frame" x="307" y="0.0" width="67" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="btnOtherTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zVV-oH-jkQ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -368,8 +389,8 @@
                                 <rect key="frame" x="0.0" y="280" width="372" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kp-un-Cs3">
-                                        <rect key="frame" x="78" y="24.5" width="41.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="78" y="27" width="33" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -395,8 +416,8 @@
                                 <rect key="frame" x="0.0" y="355" width="393" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrA-lY-mOW">
-                                        <rect key="frame" x="78" y="24.5" width="41.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="78" y="27" width="33" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -422,8 +443,8 @@
                                 <rect key="frame" x="0.0" y="425" width="414" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHb-TB-hc3">
-                                        <rect key="frame" x="78" y="24.5" width="41.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="78" y="27" width="33" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -449,8 +470,8 @@
                                 <rect key="frame" x="0.0" y="495" width="414" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mz-Ke-xTo">
-                                        <rect key="frame" x="78" y="24.5" width="41.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="78" y="27" width="33" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -482,8 +503,8 @@
                                 <rect key="frame" x="0.0" y="565" width="414" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="329-eM-0xU">
-                                        <rect key="frame" x="78" y="24.5" width="41.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="78" y="27" width="33" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -544,7 +565,7 @@
                         <outlet property="lblGuarantee" destination="329-eM-0xU" id="zsv-aI-fCy"/>
                         <outlet property="lblHowItWorks" destination="Tbj-Ae-aQY" id="UmA-CE-qaR"/>
                         <outlet property="lblPros" destination="8kp-un-Cs3" id="IiV-hB-tdR"/>
-                        <outlet property="lblStar" destination="8zh-7Q-CZg" id="SIa-op-MSq"/>
+                        <outlet property="lblStar" destination="rrA-lY-mOW" id="9YQ-w1-2ZC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWR-wt-DgT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

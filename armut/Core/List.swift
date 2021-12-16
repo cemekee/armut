@@ -8,6 +8,6 @@
 import Foundation
 
 struct List {
-    //static let getAllUrl: String = "http://www.omdbapi.com/?apikey=1b98b9c5&t="
+    static let getAllService: String = "https://my-json-server.typicode.com/engincancan/case/home"
     static let getService: String = "https://my-json-server.typicode.com/engincancan/case/service/"
 }
