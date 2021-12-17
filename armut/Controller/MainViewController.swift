@@ -31,15 +31,35 @@ class MainViewController: UIViewController {
         initVM()
         
         collectionViewPopular.register(UINib(nibName: "PopularCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PopularCollectionViewCell")
+        collectionViewBlog.register(UINib(nibName: "BlogCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "BlogCollectionViewCell")
         collectionViewPopular.dataSource = self
         collectionViewPopular.delegate = self
+        collectionViewBlog.dataSource = self
+        collectionViewBlog.delegate = self
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 5
         layout.minimumInteritemSpacing = 5.0
         collectionViewPopular.setCollectionViewLayout(layout, animated: true)
+        collectionViewBlog.setCollectionViewLayout(layout, animated: true)
         
+        
+       
+        
+//        let layout = UICollectionViewFlowLayout()
+//        layout.scrollDirection = .horizontal
+//        layout.minimumLineSpacing = 5
+//        layout.minimumInteritemSpacing = 5.0
+//        collectionViewPopular.setCollectionViewLayout(layout, animated: true)
+//        collectionViewBlog.setCollectionViewLayout(layout, animated: true)
+//
+        
+//        let layout = UICollectionViewFlowLayout()
+//        layout.scrollDirection = .horizontal
+//        layout.minimumLineSpacing = 5
+//        layout.minimumInteritemSpacing = 5.0
+//        collectionViewBlog.setCollectionViewLayout(layout, animated: true)
     }
     
     
@@ -57,6 +77,7 @@ extension MainViewController {
         
         viewModel.updateUI = {
             self.collectionViewPopular.reloadData()
+            self.collectionViewBlog.reloadData()
         }
     }
 }
@@ -109,6 +130,10 @@ extension MainViewController {
     @IBAction func btnOtherTapped() {
         viewModel.fetchService(service: -1)
     }
+    
+    func goSelectedServiceDetail(index: Int) {
+        viewModel.fetchService(service: index)
+    }
 }
 
 //MARK:- CollectionViewDataSource
@@ -118,13 +143,23 @@ extension MainViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == self.collectionViewPopular {
         return viewModel.result?.popular.count ?? 0
+        } else {
+            return viewModel.result?.posts.count ?? 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PopularCollectionViewCell", for: indexPath) as! PopularCollectionViewCell
-        cell.popular = viewModel.result?.popular[indexPath.row]
-        return cell
+        if collectionView == self.collectionViewPopular {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PopularCollectionViewCell", for: indexPath) as! PopularCollectionViewCell
+            cell.popular = viewModel.result?.popular[indexPath.row]
+            return cell
+        }else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BlogCollectionViewCell", for: indexPath) as! BlogCollectionViewCell
+            cell.blog = viewModel.result?.posts[indexPath.row]
+            return cell
+        }
     }
     
 }
@@ -133,21 +168,30 @@ extension MainViewController: UICollectionViewDataSource {
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 1.0, left: 1.0, bottom: 1.0, right: 1.0)
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if collectionView == self.collectionViewPopular {
             let gridLayout = collectionViewLayout as! UICollectionViewFlowLayout
             let widthPerItem = collectionView.frame.width / 3 - gridLayout.minimumInteritemSpacing
             let heightPerItem = collectionView.frame.height / 1 - gridLayout.minimumInteritemSpacing
             return CGSize(width:widthPerItem, height:heightPerItem)
+        }else{
+            let gridLayout = collectionViewLayout as! UICollectionViewFlowLayout
+            let widthPerItem = collectionView.frame.width / 2.5 - gridLayout.minimumInteritemSpacing
+            let heightPerItem = collectionView.frame.height / 1 - gridLayout.minimumInteritemSpacing
+            return CGSize(width:widthPerItem, height:heightPerItem)
+        }
     }
 }
 
 extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
-        vc!.viewModel.service. = self.viewModel.result?.popular[indexPath.row]
-        self.navigationController?.pushViewController(vc!, animated: true)
+        if collectionView == self.collectionViewPopular {
+        goSelectedServiceDetail(index: viewModel.result?.popular[indexPath.row].id ?? 0)
+        } else {
+            
+        }
     }
 }
