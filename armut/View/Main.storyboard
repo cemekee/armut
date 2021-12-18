@@ -563,11 +563,11 @@
             </objects>
             <point key="canvasLocation" x="2879.7101449275365" y="-70.3125"/>
         </scene>
-        <!--Item-->
+        <!--Services-->
         <scene sceneID="Fch-uu-ClG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eza-w0-SzJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Qdz-YB-Mv4"/>
+                    <tabBarItem key="tabBarItem" title="Services" image="magnifyingglass" catalog="system" id="Qdz-YB-Mv4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IH4-Ag-MgL">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -582,7 +582,7 @@
             </objects>
             <point key="canvasLocation" x="900.00000000000011" y="105.80357142857143"/>
         </scene>
-        <!--Item 2-->
+        <!--Notifications-->
         <scene sceneID="bvh-aS-qcI">
             <objects>
                 <viewController id="mS4-te-c5n" sceneMemberID="viewController">
@@ -592,13 +592,13 @@
                         <viewLayoutGuide key="safeArea" id="1qq-c1-KeG"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="PxN-qp-9vV"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="bell.badge" catalog="system" badgeValue="1" id="PxN-qp-9vV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ke6-8Z-9Sw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="568" y="935"/>
+            <point key="canvasLocation" x="432" y="935"/>
         </scene>
-        <!--Item 1-->
+        <!--Jobs-->
         <scene sceneID="NNJ-4L-HVH">
             <objects>
                 <viewController id="0rU-Zn-ylz" sceneMemberID="viewController">
@@ -608,7 +608,7 @@
                         <viewLayoutGuide key="safeArea" id="OJf-4S-c8r"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="38Q-LG-PIM"/>
+                    <tabBarItem key="tabBarItem" title="Jobs" image="bag" catalog="system" selectedImage="magnifyingglass" id="38Q-LG-PIM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zuj-5Z-IZj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -628,14 +628,35 @@
                         <segue destination="eza-w0-SzJ" kind="relationship" relationship="viewControllers" id="BRL-MT-Tif"/>
                         <segue destination="0rU-Zn-ylz" kind="relationship" relationship="viewControllers" id="lEO-NN-6Nn"/>
                         <segue destination="mS4-te-c5n" kind="relationship" relationship="viewControllers" id="rkA-WM-LJR"/>
+                        <segue destination="eXK-rv-Y5a" kind="relationship" relationship="viewControllers" id="Wci-Cb-aWF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NqC-lc-24g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-10.144927536231885" y="105.80357142857143"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="bVx-eN-a4y">
+            <objects>
+                <viewController id="eXK-rv-Y5a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m6U-vC-pfx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="p1W-ay-zik"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="7x5-j7-YPu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mkO-4N-Ucg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064" y="935"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="bell.badge" catalog="system" width="128" height="124"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
