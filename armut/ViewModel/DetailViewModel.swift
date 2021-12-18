@@ -9,9 +9,5 @@ import Foundation
 import Alamofire
 
 class DetailViewModel {
-    
     var service : Service?
-    
-    
-    
 }
