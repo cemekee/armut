@@ -21,6 +21,7 @@ extension DetailViewController {
         lblPros.text = "\(String(describing: viewModel.service?.proCount)) pros near you"
         lblStar.text = "\(String(describing: viewModel.service?.averageRating)) avarage rating"
         lblComplete.text = "Last month \(String(describing: viewModel.service?.completedJobsOnLastMonth)) cleaning job completed"
+        lblComplete.numberOfLines = 2
         lblCharge.text = "Free of charge"
         lblGuarantee.text = "Service Guaranteed"
     }

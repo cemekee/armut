@@ -4,18 +4,10 @@ Armut is a service provider application.
 
 ## Installation
 
-Armut is available through CocoaPods. To install it, simply add the following line to your Podfile:
+Armut is available through CocoaPods. Please update your pod file;
 
 ```bash
-pod 'Kinfgfisher'
-pod 'SwiftyJSON'
-pod 'Alamofire'
-```
-
-Finally
-
-```bash
-pod install
+pod update
 ```
 
 ## License
